@@ -104,7 +104,7 @@ Besides, the remodel button will be enabled too after retrieving the protein’s
 
 The local remodel will only repack the side chains of the amino acids that are within a sphere of user specified radius, taking a user-specidfied residue as the centre of this sphere. Moreover, the number of cycles for the relaxing process can be set by the user for a precise procedure.  
 
-The global remodel option will repack all the side chains in the protein structure. To select this option the user must enter a 0 in the “Set aa to focus” and “Set sphere radium to relax” fields. It is also available for the user to select the number of cycles of repacking for the relaxing process. Regardless of the selected process, a _relaxed.pdb_ file will be stored in PSV_reports/Relaxed_structures.
+The global remodel option will repack all the side chains in the protein structure. To select this option the user must enter a 0 in the “Set aa to focus” and “Set sphere radium to relax” fields. It is also available for the user to select the number of cycles of repacking for the relaxing process. Regardless of the selected process, a _{Local|Global}_relaxed_{residue to focus}_{sphere radius}_{cycles ff relaxing}_{protein ID}_.pdb_ file will be stored in PSV_reports/Relaxed_structures.
 
 
 [![image.png](https://i.postimg.cc/4NKpCYZz/image.png)](https://postimg.cc/nCJXBcXz)
