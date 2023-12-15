@@ -10,7 +10,7 @@ PTM Structure Viewer (PSV) is a PyMOL plugin that allows the user a fast localiz
 
 </center>
 
-## Instalation
+## Installation
 
 List of python libraries that are needed:
 * tkinter
