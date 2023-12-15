@@ -23,7 +23,7 @@ PSV requires the installation of the Pyrosetta suite. This installation needs a 
 
 In addition to this, to do the cross search in Appris database, it will also be needed the htslib from the samtools. https://www.htslib.org/download/
 
-Finally the PyMOL plugin manager can be used to install the _.zip_ file in the Releases section of this profile.
+**Finally the PyMOL plugin manager can be used to install the _.zip_ file in the Releases section of this profile.**
 
 ## Use
 
