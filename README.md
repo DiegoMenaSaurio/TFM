@@ -109,7 +109,7 @@ The local remodel will only repack the side chains of the amino acids that are w
 The global remodel option will repack all the side chains in the protein structure. To select this option the user must enter a 0 in the “Set aa to focus” and “Set sphere radium to relax” fields. It is also available for the user to select the number of cycles of repacking for the relaxing process. Regardless of the selected process, a _{Local|Global}_relaxed_{residue to focus}_{sphere radius}_{cycles of relaxing}_{protein ID}_.pdb_ file will be stored in PSV_reports/Relaxed_structures.
 
 
-[![image.png](https://i.postimg.cc/4NKpCYZz/image.png)](https://postimg.cc/nCJXBcXz)
+[![image.png](https://i.postimg.cc/7Y79Q0dT/image.png)](https://postimg.cc/Mv61nMWW)
 
 
 Finally, the user can press the visualize button to see in PyMOL the structure of any pdb file, where the residues containing modifications will show in different colours. The PTMs will be indicated by labels and their side chains will be shown to indicate the possible orientation of the PTM. Also, if there is a file for this protein with results from an Appris search, the plugin will colour the annotated regions and will place a label indicating the database and the feature. The user can change the modification or the position with the change modification or position button at any time.
