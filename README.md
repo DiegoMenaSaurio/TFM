@@ -23,7 +23,9 @@ PSV requires the installation of the Pyrosetta suite. This installation needs a 
 
 In addition to this, to do the cross search in Appris database, it will also be needed the htslib from the samtools. https://www.htslib.org/download/
 
-Finally the PyMOL plugin manager can be used to install the _.zip_ file in the Releases section of this profile.
+**Finally the PyMOL plugin manager can be used to install the _.zip_ file in the Releases section of this profile.**
+  
+####  For an appropriate functionality, PSV should be installed in the default location that PyMOL offers (~/.pymol/startup).
 
 ## Use
 
@@ -67,7 +69,7 @@ Id_uniprot:peptide_start-peptide_end
 |---|
 |P04004:198-212|  
 
-After that, a search in Appris will be carried out for all the regions in the protein described in the query file. The results will be stored in PSV_reports/logs as a “results_query_id_uniprot.gft” file. This file contains the information retrieved from SPADE, CRASH, THUMP, and FIREDB for the dierent regions queried.
+After that, a search in Appris will be carried out for all the regions in the protein described in the query file. The results will be stored in PSV_reports/logs as a “results_query_id_uniprot.gft” file. This file contains the information retrieved from SPADE, CRASH, THUMP, and FIREDB for the different regions queried.
 As was the case for dbPTM, PSV includes the data annotated in Appris as of 31/10/2023 to reduce search time. Note that ‘hstlib’ from samtools will be needed for this functionality.
 
 #### Enter data manually
@@ -85,13 +87,13 @@ The content of this menu depends on the number of proteins that have been submit
   
   * Multiple proteins:
   
-In this case the user can select only the submit option. This option searches for the structure of the selected proteins in AlphaFolddb, downloads the pdb files and the Predicted Aligned Error (PAE) figure in the PSV_reports/PDBs directory and creates a PyMOL session file in PSV_reports/PyMolSessions folder. This file stores the protein structure (coloured in white) with its modifications and a label indicating the name of the modification. Those residues bearing a PTM will show their sidechain and will be coloured in dierent random colours, excluding white. Besides, if there is a file with results from Appris for a protein in this process, the plugin will also colour the regions with annotations and place a label indicating the source and the feature found.
+In this case the user can select only the submit option. This option searches for the structure of the selected proteins in AlphaFolddb, downloads the pdb files and the Predicted Aligned Error (PAE) figure in the PSV_reports/PDBs directory and creates a PyMOL session file in PSV_reports/PyMolSessions folder. This file stores the protein structure (coloured in white) with its modifications and a label indicating the name of the modification. Those residues bearing a PTM will show their sidechain and will be coloured in different random colours, excluding white. Besides, if there is a file with results from Appris for a protein in this process, the plugin will also colour the regions with annotations and place a label indicating the source and the feature found.
 
 [![image.png](https://i.postimg.cc/tgd0CRdT/image.png)](https://postimg.cc/WD4Y5vHL)
   
   * Single protein:  
   
-  The user must select a structure file to work by clicking the get pdb button. Then a pop-up window will show the structure files for this protein retrieved from Uniprot so that the user can select any of them. If the selected structure file has been predicted by AlphaFold, the header indicating the protein identifier will show the average predicted local distance dierence test (pLDDT)  to assess the structure reliability, as this value represents the model confidence prediction.  
+  The user must select a structure file to work by clicking the get pdb button. Then a pop-up window will show the structure files for this protein retrieved from Uniprot so that the user can select any of them. If the selected structure file has been predicted by AlphaFold, the header indicating the protein identifier will show the average predicted local distance difference test (pLDDT)  to assess the structure reliability, as this value represents the model confidence prediction.  
 
 Then clicking the get properties button will download the pdb file selected by the user and place it in the PSV_reports/PDBs directory. If the structure is predicted, the PAE image will be also downloaded. Besides, the name of the protein, the length of the sequence and the sequence will be retrieved as well. For this process, instead of retrieving those properties from Uniprot or AlphaFolddb, the plugin uses the pose_from_rcsb function from the Pyrosetta library. This function downloads the pdb and removes water molecules and ligands that do not have a role in our workflow.  
 
