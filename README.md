@@ -77,9 +77,9 @@ In this case, three text fileds will show where the user can type the protein Un
 
 [![image.png](https://i.postimg.cc/02jJpLFc/image.png)](https://postimg.cc/xcrCQF0z)
 
-####Import local pdb
+#### Import local pdb
 In this option the user can work with his/her own structure file. After load this file, the protein menu will show.
-####Protein menu
+#### Protein menu
 The content of this menu depends on the number of proteins that have been submitted.
 
 
